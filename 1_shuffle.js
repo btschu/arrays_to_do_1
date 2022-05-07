@@ -3,8 +3,10 @@
 function shuffle(arr) {
     var x
     var temp
+    // loop through the array
     for( var i = 0; i < arr.length; i++) {
-        x = Math.trunc(Math.random()*arr.length);
+        // define the variables. temp is used to temporarily store that value
+        x = Math.trunc(Math.random() * arr.length);
         temp = arr[i]
         arr[i] = arr[x]
         arr[x] = temp
@@ -13,4 +15,4 @@ function shuffle(arr) {
     return arr
 }
 
-shuffle([3,5,3,2,1,5,6])
+shuffle([3,2,1,5,6])
